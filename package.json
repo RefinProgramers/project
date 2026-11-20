@@ -1,0 +1,27 @@
+{
+  "name": "hris-karyawan",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "link": "node server/share-link.js",
+    "setup:local": "node server/setup-local-db.js",
+    "db:init": "node server/init-db.js",
+    "admin:create": "node server/create-admin.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "13.3.3",
+    "bcryptjs": "3.0.2",
+    "dotenv": "16.6.1",
+    "express": "5.1.0",
+    "express-session": "1.18.2",
+    "helmet": "8.1.0",
+    "mysql2": "3.24.6"
+  }
+}
